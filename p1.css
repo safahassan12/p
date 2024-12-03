@@ -1,0 +1,76 @@
+/* خلفية الصفحة */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+  }
+  
+  /* الحاوية */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* البطاقة */
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+  }
+  
+  /* حاوية الصورة */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-image {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* النصوص */
+  .welcome-text {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* زر عصري */
+  .modern-button {
+    background: linear-gradient(135deg, #e67e22, #f1c40f);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modern-button:hover {
+    background: linear-gradient(135deg, #f1c40f, #e67e22);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }

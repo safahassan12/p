@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Journey</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1a1a1a;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .card {
+      background-color: #f5ecd8;
+      border-radius: 16px;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ef8a19;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .illustration {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto 20px;
+      border-radius: 12px;
+    }
+    
+    .input {
+      width: calc(100% - 40px);
+      padding: 10px 15px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    .button {
+      padding: 10px 20px;
+      background-color: #f8a54a;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ef8a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Welcome to CompuKids!</h1>
+      <p class="subtitle">Enter your name below to start your learning journey!</p>
+      <img src="edit.png" alt="Learning Illustration" class="illustration">
+      <input type="text" placeholder="Enter your name here" class="input">
+      <button class="button" onclick="startJourney()">Let's Go!</button>
+    </div>
+  </div>
+  <script>
+    function startJourney() {
+      const input = document.querySelector('.input');
+      const name = input.value.trim();
+      const card = document.querySelector('.card');
+      
+      if (name) {
+        card.innerHTML = `
+          <h1>Welcome, ${name}!</h1>
+          <p>Your colorful journey begins now!</p>
+        `;
+      } else {
+        alert('Please enter your name to continue.');
+      }
+    }
+  </script>
+</body>
+</html>
